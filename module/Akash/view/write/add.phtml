@@ -1,0 +1,8 @@
+<h2>Add The New Admin Field</h2>h2>
+<?php
+$form= $this->form;
+$form= $this->setAttribute('action',$this->url());
+echo $this->partial('akash/write/form',[
+	'form'=>$form,
+	'submitLable'=>'Insert New Post',
+])

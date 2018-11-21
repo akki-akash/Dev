@@ -5,7 +5,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Application;
+namespace Contact;
 
 use Zend\Router\Http\Literal;
 use Zend\Router\Http\Segment;
@@ -24,26 +24,13 @@ return [
                     ],
                 ],
             ],
-            'application' => [
+            'contact' => [
                 'type'    => Segment::class,
                 'options' => [
-                    'route'    => '/application[/:action]',
+                    'route'    => '/contact[/:action]',
                     'defaults' => [
                         'controller' => Controller\IndexController::class,
                         'action'     => 'index',
-                    ],
-                ],
-            ],
-			
-			
-			
-			 'application' => [
-                'type'    => Segment::class,
-                'options' => [
-                    'route'    => '/application[/:action]',
-                    'defaults' => [
-                        'controller' => Controller\IndexController::class,
-                        'action'     => 'index1',
                     ],
                 ],
             ],
@@ -54,6 +41,14 @@ return [
             Controller\IndexController::class => InvokableFactory::class,
         ],
     ],
+	
+	
+	
+	
+	
+	
+	
+	
     'view_manager' => [
         'display_not_found_reason' => true,
         'display_exceptions'       => true,
@@ -62,9 +57,7 @@ return [
         'exception_template'       => 'error/index',
         'template_map' => [
             'layout/layout'           => __DIR__ . '/../view/layout/layout.phtml',
-			'layout/layout'           => __DIR__ . '/../view/layout/layout1.phtml',
-			//'application/index/index' => __DIR__ . '/../view/application/index/index.phtml',
-            'application/index/index1' => __DIR__ . '/../view/application/index/index1.phtml',
+            'contact/index/index' => __DIR__ . '/../view/contact/index/index.phtml',
             'error/404'               => __DIR__ . '/../view/error/404.phtml',
             'error/index'             => __DIR__ . '/../view/error/index.phtml',
         ],

@@ -1,0 +1,9 @@
+<h1>Edit Admin post</h1>
+
+<?php
+$form = $this->form;
+$form->setAttribute('action', $this->url('admin/edit', [], true));
+echo $this->partial('admin/write/form', [
+    'form' => $form,
+    'submitLabel' => 'Update post',
+]);

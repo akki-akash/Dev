@@ -39,19 +39,15 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="<?= $this->url('home') ?>">Home</a></li>
-						  <li class="active"><a href="<?= $this->url('user') ?>">About Us</a></li>
-						  <li class="active"><a href="<?= $this->url('admin') ?>">Contact Us</a></li>
-						  <li class="active"><a href="<?= $this->url('blog') ?>">Blog </a></li>
-
                     </ul>
                 </div>
             </div>
         </nav>
         <div class="container">
-            <?= $this->content ?>
+            <?=  $this->content ?>
             <hr>
             <footer>
-                <p>&copy; 2005 - <?= date('Y') ?> by Akash Technologies Ltd. All rights reserved.</p>
+                <p>&copy; 2005 - <?= date('Y') ?> by Zend Technologies Ltd. All rights reserved.</p>
             </footer>
         </div>
         <?= $this->inlineScript() ?>
